@@ -1,6 +1,4 @@
-# Concept
-
-## What is Git?
+# What is Git?
 
 An open-source version control system. 
 - Version Control System:
@@ -35,11 +33,11 @@ GitHub: A web-based platform that is used to host repositories along with collab
 - status: Check which files need to be committed or is being tracked.
 - init: Creates a new repo from scratch in the current directory.
 
-## Understanding SSH and the "Common Mistake":
+# Understanding SSH:
 
-### Creating a local repo via Windows Powershell:
+## Creating a local repo via Windows Powershell:
 
-**Move to your preferred directory that you want your local repo to be initialized.**
+### **Move to your preferred directory that you want your local repo to be initialized.**
 ```bash
 New-Item -ItemType Directory -Name "Folder_Name"
 cd Folder_Name 
@@ -47,13 +45,14 @@ git init
 ```
 I created a folder "Demo" in my preferred directory. I entered that folder and initialized my new local repo using "git init".
 
-### Creating .md file:
+## Creating .md file:
 
 ```bash
 New-Item -ItemType File -Name "File_Name.md"
 ```
 I created a file "README.md".
 
+## Common Mistake Part 1:
 ### Add, commit and push changes:
 
 ```bash
@@ -61,10 +60,12 @@ git add .
 git commit -m "Successfully created File_Name.md"
 git push origin master
 ```
+
 Here as I try to push my changes to the GitHub, it'll display an error stating: 
 **"fatal: 'origin' does not appear to be a git repository"**
 This error occured since our remote repository doesn't exist. 
 
+## Solution:
 ### Create a remote repository in GitHub:
 
 - Click on the profile located on top right corner.
@@ -84,7 +85,7 @@ Where,  "-t" refers to the type of encryption key to generate.
         "-C" refers to the email address.
 **This command will generate public/private key and save it to the default directory.**
 
-#### Copying the public key from our local machine:
+### Copying the public key from our local machine:
 
 - cd to the default directory where the keys are located.
 - List files using "ls".
@@ -95,7 +96,7 @@ We use public key and store our private key safely in the local machine. We do t
 - View the id_rsa.pub using, "cat id_rsa.pub" command. This will show our public key.
 - Select and copy the key, "SHA.....your email_address".
 
-#### Adding the key to our GitHub:
+### Adding the key to our GitHub:
 
 - Click on your Profile.
 - In the Dropdown menu, navigate to Settings.
@@ -113,5 +114,8 @@ git add .
 git commit -m "Successfully created File_Name.md"
 git push origin master
 ```
-This will now work without any hiccups. 
+#### This will now work without any hiccups. 
+
+
+
 
