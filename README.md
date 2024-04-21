@@ -5,8 +5,8 @@ An open-source version control system.
     Management of changes performed in a file, document, code or any piece of 
     information. 
     
-    Simply put, It's a way to track our code changes, allowing us to save our initial
-    version of the code, update the code by committing changes directly into the code in real time. We can hop back to previous versions, allows us to check for bugs/errors. 
+  Simply put, It's a way to track our code changes, allowing us to save our initial
+  version of the code, update the code by committing changes directly into the code in real time. We can hop back to previous versions, allows us to check for bugs/errors. 
 
 ## Difference between Git and Github:
 
