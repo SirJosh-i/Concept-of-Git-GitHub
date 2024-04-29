@@ -106,6 +106,12 @@ We use public key and store our private key safely in the local machine. We do t
 - Under "Key", paste the copied ida_rsa.pub. 
 Now, your local machine is identified to the GitHub.
 
+### To verify connection:
+
+- If everything was set up correctly you should see the message: Hi username! You've successfully authenticated...
+```bash
+ssh -T git@github.com
+```
 ### Add, commit and push changes Contd:
 
 Continuing from before:
