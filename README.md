@@ -112,7 +112,7 @@ If everything was set up correctly you should see the message: Hi username! You'
 ```bash
 ssh -T git@github.com
 ```
-!(https://github.com/SirJosh-i/Concept-of-Git-GitHub/blob/master/image.png)
+![image](https://github.com/SirJosh-i/Concept-of-Git-GitHub/blob/master/image.png)
 
 ### Add, commit and push changes Contd:
 
